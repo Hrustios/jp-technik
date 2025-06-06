@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Куликов Андрей проект 2025 ИС-25 РКСИ">
+  <title>Японская техника — Проект Куликов Андрей ИС-25</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header id="navbar">
+    <nav>
+      <div class="logo">日本のぎじゅつ - Японская Техника</div>
+      <ul>
+        <li><a href="#intro">Вступление</a></li>
+        <li><a href="#types">Виды</a></li>
+        <li><a href="#details">Подробнее</a></li>
+        <li><a href="#fests">Праздники</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="bck">
+  <section id="intro">
+    <h1>Японская техника — стиль, мощь и душа Японии</h1>
+    <br>
+    <p>Япония сочетает древние традиции и передовые технологии. Мотоциклы, автомобили, спецтехника — символ точности и культуры.<br> Исследуй японский инженерный гений и его влияние на мир.</p>
+  </section>
+  </div>
+  <section id="types">
+    <h1>Виды японской техники</h1>
+    <div class="grid">
+      <div class="card" onclick="scrollToBlock('auto')" id="auto_g">
+        <h3>Автомобили JDM</h3>
+        <p>Культовые модели дрифта и турбо эпохи.</p>
+        <img src="imgs/jdm.jpg" alt="Автомобили">
+      </div>
+      <div class="card" onclick="scrollToBlock('moto')" id="moto_g">
+        <h3>Мотоциклы</h3>
+        <p>Стиль и мощь в каждом движении.</p>
+        <img src="imgs/moto.jpg" alt="Мотоциклы">
+      </div>
+      <div class="card" onclick="scrollToBlock('spec')" id="spec_g">
+        <h3>Спецтехника</h3>
+        <p>Надежность и инновации.</p>
+        <img src="imgs/spec.jpg" alt="Спецтехника">
+      </div>
+      <div class="card" onclick="scrollToBlock('future')" id="future_g">
+        <h3>Инновационный транспорт</h3>
+        <p>Электроника и автономность.</p>
+        <img src="imgs/future.jpg" alt="Инновации">
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="detail-block" id="auto">
+      <h2>Автомобили</h2>
+      <p>От ревущих Skyline и агрессивных Supra до культовых RX-7 и Silvia — японские автомобили стали символом свободы, скорости и инженерного гения. JDM — это больше, чем просто машины, это дух улиц Токио, неон и запах жжёной резины, это дрифт, культура и стиль, который вдохновляет мир.</p>
+      <img src="imgs/avto_d.jpg" alt="Машина">
+    </div>
+
+    <div class="detail-block" id="moto">
+      <h2>Мотоциклы</h2>
+      <p>Японские байки — это слияние скорости, баланса и философии. От лёгких универсалов Honda до легендарных спортбайков Kawasaki Ninja — каждый мотоцикл несёт в себе дух воина самурая на колёсах. Здесь важны не только лошадиные силы, но и стиль, дизайн и уважение к дороге.</p>
+      <img src="imgs/moto_d.webp" alt="Мотоцикл">
+    </div>
+
+    <div class="detail-block" id="spec">
+      <h2>Спецтехника</h2>
+      <p>Даже рабочие машины в Японии — произведения инженерного искусства. Умные краны, маневренные мини-экскаваторы, невероятно точные роботы-погрузчики — всё продумано до деталей. Это техника, которая не просто работает, а делает это эстетично, технологично и надёжно.</p>
+      <img src="imgs/spec_d.jpg" alt="Робот-погрузчик">
+    </div>
+
+    <div class="detail-block" id="future">
+      <h2>Инновации</h2>
+      <p>Добро пожаловать в завтра: электрические купе с голосовым ИИ, самоуправляемые капсулы и машины, что паркуются сами. Япония не просто идёт в ногу со временем — она формирует будущее. Инновации здесь — это часть культуры, как каллиграфия или чайная церемония.</p>
+      <img src="imgs/future_d.jpg" alt="Робот в ресторане">
+    </div>
+  </section>
+
+  <section id="fests">
+    <h2>Фестивали и праздники</h2>
+    <div class="festivals">
+        <div class="fest-block" id="jdm-fest">
+            <h2>JDM Classic Meeting</h2>
+            <p>Собирает владельцев и фанатов японской классики. Проводится ежегодно в Осаке, атмосфера ретро и дрифт-шоу.</p>
+            <img src="imgs/avto_f.jpg" alt="Робот в ресторане">
+        </div>
+        <div class="fest-block" id="moto-fest">
+            <h2>Tokyo Motorcycle Show</h2>
+            <p>Главная выставка мототехники в Японии. Представлены новинки от Honda, Yamaha, Suzuki и Kawasaki.</p>
+            <img src="imgs/moto_f.jpg" alt="Робот в ресторане">
+        </div>
+        <div class="fest-block" id="train-fest">
+            <h2>Shinkansen Anniversary</h2>
+            <p>Ежегодный праздник, посвящённый запуску первого скоростного поезда в 1964 году. Проводится по всей стране.</p>
+            <img src="imgs/spec_f.jpg" alt="Робот в ресторане">
+        </div>
+        <div class="fest-block" id="drone-fest" >
+            <h2>Osaka Tech & <a href="https://redcliff-inc.co.jp/works/expo2025osakakansai/?lang=en">Drone Fest</a></h2>
+            <p>Фестиваль передовых технологий, где дроны играют ключевую роль. Интерактивные зоны и выступления.</p>
+            <img src="imgs/future_f.jpg" alt="Робот в ресторане">
+        </div>
+    </div>
+  </section>
+
+    <section id="end">
+        <div>
+        <h2>Сердце Японии — в её технике и технологиях</h2>
+        <p>Японская техника — это философия точности, уважения к деталям и мощи. <br>Погружение в неё — уважение к культуре, которая ценит качество и прогресс.</p>
+        </div>
+    </section>
+
+  <footer>
+    <p>Куликов Андрей, ИС-25, РКСИ, 2025</p>
+  </footer>
+</body>
+</html>
