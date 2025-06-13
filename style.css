@@ -112,7 +112,6 @@ section {
     box-shadow: 5px 5px 5px pink;
 }
 .detail-block h2{
-    grid-column: 1/2;
     align-self: flex-end;
     justify-self: center;
     padding: 0 3rem;    
@@ -192,24 +191,28 @@ footer{
 /* --------------------------------- */
 @media (orientation: portrait){
 
-p{
-    font-size: larger;
+p,h2,h3{
+    font-size: xx-large;
 }
-
+a{
+    color:rgb(155, 197, 40);
+    text-shadow: 3px 3px 5px rgb(122, 26, 212);
+}
 .logo{
     font-size: 0;
 }
 #intro{
     font-size: x-large;
-    max-width: 50%;
+    max-width: 80%;
 }
 nav{
-    height: 2.5rem;
+    height: 3rem;
 }
 
 header ul {
     width: 100%;
     right: 0;
+    font-size: xx-large;
     justify-content: center;
 }
 section {
@@ -243,6 +246,9 @@ section {
     font-size: larger;
 }
 
+.detail-block h2{
+    grid-column: 1/2; 
+}
 .detail-block img{
     justify-self: center;
 }
@@ -255,6 +261,13 @@ section {
     justify-self: center;
 }
 }
+/* --------------------------------- */
+
+#end{
+    color: blanchedalmond;
+    text-shadow: 5px 5px 6px rgb(36, 10, 97);
+}
+
 /* --------------------------------- */
 @media (orientation:landscape){
 
