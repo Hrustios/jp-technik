@@ -192,7 +192,7 @@ footer{
 @media (orientation: portrait){
 
 p,h2,h3{
-    font-size: xx-large;
+    font-size: x-large;
 }
 a{
     color:rgb(155, 197, 40);
@@ -202,7 +202,7 @@ a{
     font-size: 0;
 }
 #intro{
-    font-size: x-large;
+    font-size: large;
     max-width: 80%;
 }
 nav{
@@ -210,13 +210,13 @@ nav{
 }
 
 header ul {
-    width: 100%;
+    width: 100vw;
     right: 0;
-    font-size: xx-large;
+    font-size:medium;
     justify-content: center;
 }
 section {
-    margin: 4rem  3rem;
+    margin: 2rem  1rem;
 }
 
 /* --------------------------------- */
@@ -245,21 +245,29 @@ section {
     grid-template: repeat(4,1fr) / 1 fr;
     font-size: larger;
 }
-
+.detail-block p{
+    text-align: center;
+    
+    padding: 0 1rem;
+}
 .detail-block h2{
     grid-column: 1/2; 
 }
 .detail-block img{
     justify-self: center;
+    max-width: 100%;
 }
 /* --------------------------------- */
 
 #fests{
     grid-template: repeat(2,1fr) / 1fr;
 }
+.fest-block p{
+    padding: 0 1rem;
+}
 .fest-block img{
     justify-self: center;
-}
+    max-width: 100%;
 }
 /* --------------------------------- */
 
@@ -267,7 +275,7 @@ section {
     color: blanchedalmond;
     text-shadow: 5px 5px 6px rgb(36, 10, 97);
 }
-
+}
 /* --------------------------------- */
 @media (orientation:landscape){
 
