@@ -1,5 +1,4 @@
-@media (orientation:landscape){
-    body{
+body{
     background-color: rgb(0, 0, 0);
     font-family: cursive;
     color:wheat;
@@ -8,9 +7,7 @@
 * {
   margin: 0;
 }
-
 /* --------------------------------- */
-
 header{
     position: fixed;
     background: linear-gradient(rgb(95, 141, 226),rgba(255, 255, 255, 0));
@@ -18,10 +15,6 @@ header{
     width:100%;
     height: 5rem;
     font-size: large;
-}
-.logo{
-    align-self: center;
-    margin: 1rem 5rem ;
 }
 #intro{
     text-align: center;
@@ -31,14 +24,6 @@ header{
     text-shadow: 4px 4px 6px rgb(168, 89, 89);
     transition: 150ms;
 }
-#intro:hover{
-    border: 3px solid rgb(2, 216, 216);
-    font-size:x-large;
-    background:rgb(50, 41, 90);
-    height: fit-content;
-    transition: 150ms;
-}
-
 #bck{
     background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('imgs/bcg.jpg');
     background-size: cover;
@@ -58,36 +43,19 @@ header ul{
     list-style-type: none;
     display: flex;
     position: absolute;
-    right: 4rem;
     gap: 2rem;
 }
-
 a{
     color: antiquewhite;
     text-decoration: none;
     display: inline-block;
     text-shadow: 3px 3px 5px greenyellow;
-
     transition: 150ms;
 }
-a:hover{
-    color: rgb(14, 204, 147);
-    transform: translateY(5px);
-    text-shadow: 4px 2px 6px rgb(219, 31, 194);
-
-    transition: 150ms;
-}
-
 section {
-    margin: 5rem  8rem;
     background-color: black;
     padding: 2rem;
     border-radius: 2rem;
-}
-
-footer{
-    text-align: center;
-    font-size: medium;
 }
 
 /* --------------------------------- */
@@ -97,8 +65,6 @@ footer{
     justify-items: center;
     gap: 1rem;
     text-align: center;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(2,1fr);
 }
 .grid div{
     align-content: center;
@@ -107,30 +73,8 @@ footer{
     border-radius: 1rem;
     transition: 150ms;
 }
-.grid div:hover{
-    cursor: pointer;
-    background-color: rgb(12, 14, 46);
-    text-shadow: 4px 4px 5px rgb(182, 130, 206);
-    transition: 150ms;
-}
 .grid div > *{
     margin-bottom: 1rem;
-}
-#auto_g {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-#moto_g {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-#spec_g {
-    grid-column: 1/2;
-    grid-row:2/3 ;
-}
-#future_g{
-    grid-column: 2/3;
-    grid-row: 2/3;
 }
 #types img{
     max-height:90%;
@@ -146,38 +90,23 @@ footer{
     background-color: rgb(6, 6, 22);
     text-shadow: 4px 4px 5px rgb(130, 150, 206);
 }
-
 /* --------------------------------- */
-
 #details{
     display: block;
-    grid-template: repeat(2,1fr) / repeat(2,1 fr);
     gap: 2rem;
     background-color: rgb(6, 6, 22);
     text-shadow: 4px 4px 5px rgb(204, 130, 206);
 }
-
 .detail-block {
     background-color: rgb(10, 10, 37);
     margin: 2rem 0;
     display: grid;
-    grid-template-columns: 1fr , 1.5fr;
-    grid-template-rows: 1fr,1fr;
     gap: 1rem;
     padding: 1.5rem;
     border-radius: 1rem;
     transition: 150ms;
 }
-.detail-block:hover{
-    font-size: larger;
-    background-color:rgb(13, 13, 46) ;
-    text-shadow: 4px 4px 5px rgb(118, 211, 180);
-    transition: 150ms;
-}
-
 .detail-block img{
-    grid-column: 2/3;
-    grid-row: 1/3;
     max-width: 80%;
     border-radius: 1rem;
     box-shadow: 5px 5px 5px pink;
@@ -197,16 +126,13 @@ footer{
     padding: 0 3rem;
 }
 /* --------------------------------- */
-
 #fests{
     display: block;
-    grid-template: repeat(2,1fr) / repeat(2,1 fr);
     gap: 2rem;
     background-color: rgb(6, 6, 22);
     text-shadow: 4px 4px 5px rgb(144, 102, 199);
     text-align: center;
 }
-
 .fest-block {
     background-color: rgb(10, 10, 37);
     margin: 2rem 0;
@@ -218,37 +144,25 @@ footer{
     border-radius: 1rem;
     transition: 150ms;
 }
-.fest-block:hover{
-    font-size: larger;
-    background-color:rgb(13, 13, 46) ;
-    text-shadow: 4px 4px 5px rgb(211, 189, 118);
-    transition: 150ms;
-}
-
 .fest-block img{
-    grid-column: 1/2;
-    grid-row: 1/3;
     max-width: 80%;
     border-radius: 1rem;
     box-shadow: 5px 5px 5px rgb(96, 78, 160);
+    justify-self: center;
 }
 .fest-block h2{
-    grid-column: 2/3;
     align-self: flex-end;
     justify-self: center;
     padding: 0 3rem;    
 }
 
 .fest-block p{
-    grid-column: 2/3;
     text-align: center;
     align-self: flex-start;
     justify-self: center;
     padding: 0 3rem;
 }
-
 /* --------------------------------- */
-
 #end{
     background:linear-gradient(rgba(133, 103, 103, 0.521),rgba(81, 92, 185, 0.329)),url('imgs/end.jpg');
     background-size: cover;
@@ -266,6 +180,189 @@ footer{
     width: fit-content;
 }
 
+footer{
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(121, 7, 92);
+    background: linear-gradient(0deg, rgb(75, 25, 62),rgba(255, 255, 255, 0));
+    transition: 150ms;
+}
+
+/* --------------------------------- */
+@media (orientation: portrait){
+
+p{
+    font-size: larger;
+}
+
+.logo{
+    font-size: 0;
+}
+#intro{
+    font-size: x-large;
+    max-width: 50%;
+}
+nav{
+    height: 2.5rem;
+}
+
+header ul {
+    width: 100%;
+    right: 0;
+    justify-content: center;
+}
+section {
+    margin: 4rem  3rem;
+}
+
+/* --------------------------------- */
+
+.grid{
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(4,1fr);
+    font-size: larger;
+}
+#auto_g {
+    grid-row: 1/2;
+}
+#moto_g {
+    grid-row: 2/3;
+}
+#spec_g {
+    grid-row:3/4 ;
+}
+#future_g{
+    grid-row: 4/5;
+}
+
+/* --------------------------------- */
+
+#details{
+    grid-template: repeat(4,1fr) / 1 fr;
+    font-size: larger;
+}
+
+.detail-block img{
+    justify-self: center;
+}
+/* --------------------------------- */
+
+#fests{
+    grid-template: repeat(2,1fr) / 1fr;
+}
+.fest-block img{
+    justify-self: center;
+}
+}
+/* --------------------------------- */
+@media (orientation:landscape){
+
+.logo{
+    align-self: center;
+    margin: 1rem 5rem ;
+}
+
+#intro:hover{
+    border: 3px solid rgb(2, 216, 216);
+    font-size:x-large;
+    background:rgb(50, 41, 90);
+    height: fit-content;
+    transition: 150ms;
+}
+
+header ul{
+    right: 4rem;
+}
+a:hover{
+    color: rgb(14, 204, 147);
+    transform: translateY(5px);
+    text-shadow: 4px 2px 6px rgb(219, 31, 194);
+
+    transition: 150ms;
+}
+
+section {
+    margin: 5rem  16rem;
+}
+
+/* --------------------------------- */
+
+.grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+}
+
+.grid div:hover{
+    cursor: pointer;
+    background-color: rgb(12, 14, 46);
+    text-shadow: 4px 4px 5px rgb(182, 130, 206);
+    transition: 150ms;
+}
+#auto_g {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#moto_g {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#spec_g {
+    grid-column: 1/2;
+    grid-row:2/3 ;
+}
+#future_g{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+/* --------------------------------- */
+
+#details{
+    grid-template: repeat(2,1fr) / repeat(2,1 fr);
+}
+
+.detail-block {
+    grid-template-columns: 1fr , 1.5fr;
+    grid-template-rows: 1fr,1fr;
+}
+.detail-block:hover{
+    font-size: larger;
+    background-color:rgb(13, 13, 46) ;
+    text-shadow: 4px 4px 5px rgb(118, 211, 180);
+    transition: 150ms;
+}
+
+.detail-block img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+/* --------------------------------- */
+
+#fests{
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+}
+
+.fest-block:hover{
+    font-size: larger;
+    background-color:rgb(13, 13, 46) ;
+    text-shadow: 4px 4px 5px rgb(211, 189, 118);
+    transition: 150ms;
+}
+
+.fest-block img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.fest-block h2{
+    grid-column: 2/3;  
+}
+
+.fest-block p{
+    grid-column: 2/3;
+}
+
+/* --------------------------------- */
+
 #end:hover{
     font-size:x-large;
     color: rgb(191, 221, 21);
@@ -274,14 +371,6 @@ footer{
 }
 
 /* --------------------------------- */
-
-footer{
-    font-size: large;
-    padding: 1rem;
-    text-shadow: 4px 4px 5px rgb(121, 7, 92);
-    background: linear-gradient(0deg, rgb(75, 25, 62),rgba(255, 255, 255, 0));
-    transition: 150ms;
-}
 
 footer:hover{
     font-size: x-large;
